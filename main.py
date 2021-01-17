@@ -132,7 +132,7 @@ if __name__ == "__main__":
     K = 10.0  # scaler coupling parameter
     #alpha = 1.2    
     pload = -1.0
-    pgen = - (pload*nload)/ngen
+    pgen = - (pload*nload)/ngen #pgen is automatically with the total load of the network
     #PGmax = 1.1*pgen
     #PGmin = 0.9*pgen
     gamma = 0.1
