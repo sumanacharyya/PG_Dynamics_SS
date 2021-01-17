@@ -130,9 +130,9 @@ if __name__ == "__main__":
     nload = nbus - ngen
     d = 2
     K = 10.0  # scaler coupling parameter
-    #alpha = 1.2
-    pgen = 1.0
+    #alpha = 1.2    
     pload = -1.0
+    pgen = - (pload*nload)/ngen
     #PGmax = 1.1*pgen
     #PGmin = 0.9*pgen
     gamma = 0.1
