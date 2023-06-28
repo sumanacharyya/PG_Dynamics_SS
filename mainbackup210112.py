@@ -68,7 +68,7 @@ if __name__ == "__main__":
         y0[i*d+0] = ss_theta[i]
     ti = 0.0; tf = 10; tint = 101
     tspan, sol_t = solve_dynamics(g0, y0, power, gamma, K, nbus, d, ti, tf, tint)    
-    theta, omega = compute_theta_omega(sol, nbus, d)
+    theta, omega = compute_theta_omega(sol_t, nbus, d)
     fig1 = plt.figure(figsize = (8,6))
     plt.plot(tspan,theta,'-')
     plt.xlabel('time')
